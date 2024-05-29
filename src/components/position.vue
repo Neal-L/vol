@@ -1,7 +1,7 @@
 <template>
-  <v-card height="450">
-    <v-img  cover src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*k6IY0i6giGZoqQnpzoNEow.png"></v-img>
-    <v-btn color="white" variant="text" class=text-1 rounded="xl" to="/site">{{ text_1 }}</v-btn>
+  <v-card height="420">
+    <v-img  cover src="https://i2.wp.com/news.qoo-app.com/wp-content/uploads/2023/03/haikyu_21.jpg?strip=info&w=1280&ssl=1"></v-img>
+    <v-btn color="white" variant="text" class=text-1 rounded="xl" to="/position">{{ text_1 }}</v-btn>
     <!-- <v-card-text class="text-1">{{ text_1 }}</v-card-text> -->
   </v-card>
 </template>
@@ -9,12 +9,11 @@
 <script setup>
 import { ref } from 'vue'
 
-const text_1 = ref('球員位置')
+const text_1 = ref('輪轉站位')
 </script>
 
 <style scoped>
 .text-1{
-
   font-size: 20px;
   font-weight: 600;
   position: absolute;

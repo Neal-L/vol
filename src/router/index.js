@@ -35,6 +35,17 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/site",
+    component: () => import("@/layouts/default.vue"),
+    children: [
+      {
+        path: "",
+        name: "site",
+        component: () => import("@/layouts/site.vue"),
+      },
+    ],
+  },
 ]
 
 const router = createRouter({
