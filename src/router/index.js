@@ -46,6 +46,17 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/ws",
+    component: () => import("@/layouts/default.vue"),
+    children: [
+      {
+        path: "",
+        name: "ws",
+        component: () => import("@/layouts/site/ws.vue"),
+      },
+    ],
+  }
 ]
 
 const router = createRouter({
