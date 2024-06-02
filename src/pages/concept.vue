@@ -1,12 +1,14 @@
 <template>
   <v-main class="pt-0">
     <v-container>
-      <v-row  justify="center">
-        <v-col md="6">
+      <v-row  class="d-flex flex-row">
+        <v-col cols="12" md="6">
             <site />
             <position />
+        </v-col>
+        <v-col cols="12" md="6">
             <sign />
-            <think /> 
+            <think />
         </v-col>
       </v-row>
     </v-container>

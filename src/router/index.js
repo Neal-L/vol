@@ -56,6 +56,50 @@ const routes = [
         component: () => import("@/layouts/site/ws.vue"),
       },
     ],
+  },
+  {
+    path: "/st",
+    component: () => import("@/layouts/default.vue"),
+    children: [
+      {
+        path: "",
+        name: "st",
+        component: () => import("@/layouts/site/st.vue"),
+      },
+    ],
+  },
+  {
+    path: "/mb",
+    component: () => import("@/layouts/default.vue"),
+    children: [
+      {
+        path: "",
+        name: "mb",
+        component: () => import("@/layouts/site/mb.vue"),
+      },
+    ],
+  },
+  {
+    path: "/op",
+    component: () => import("@/layouts/default.vue"),
+    children: [
+      {
+        path: "",
+        name: "op",
+        component: () => import("@/layouts/site/op.vue"),
+      },
+    ],
+  },
+  {
+    path: "/lb",
+    component: () => import("@/layouts/default.vue"),
+    children: [
+      {
+        path: "",
+        name: "lb",
+        component: () => import("@/layouts/site/lb.vue"),
+      },
+    ],
   }
 ]
 
