@@ -100,7 +100,62 @@ const routes = [
         component: () => import("@/layouts/site/lb.vue"),
       },
     ],
-  }
+  },
+  {
+    path: "/fitness",
+    component: () => import("@/layouts/default.vue"),
+    children: [
+      {
+        path: "",
+        name: "fitness",
+        component: () => import("@/pages/fitness.vue"),
+      },
+    ],
+  },
+  {
+    path: "/back",
+    component: () => import("@/layouts/default.vue"),
+    children: [
+      {
+        path: "",
+        name: "back",
+        component: () => import("@/layouts/fitness/back.vue"),
+      },
+    ],
+  },
+  {
+    path: "/chest",
+    component: () => import("@/layouts/default.vue"),
+    children: [
+      {
+        path: "",
+        name: "chest",
+        component: () => import("@/layouts/fitness/chest.vue"),
+      },
+    ],
+  },
+  {
+    path: "/leg",
+    component: () => import("@/layouts/default.vue"),
+    children: [
+      {
+        path: "",
+        name: "leg",
+        component: () => import("@/layouts/fitness/leg.vue"),
+      },
+    ],
+  },
+  {
+    path: "/shoulder",
+    component: () => import("@/layouts/default.vue"),
+    children: [
+      {
+        path: "",
+        name: "shoulder",
+        component: () => import("@/layouts/fitness/shoulder.vue"),
+      },
+    ],
+  },
 ]
 
 const router = createRouter({
