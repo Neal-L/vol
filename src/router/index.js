@@ -156,6 +156,17 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/position",
+    component: () => import("@/layouts/default.vue"),
+    children: [
+      {
+        path: "",
+        name: "position",
+        component: () => import("@/layouts/concept/position.vue"),
+      },
+    ],
+  }
 ]
 
 const router = createRouter({
