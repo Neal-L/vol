@@ -1,7 +1,7 @@
 <template>
   <v-app-bar class="px-1" color = "transparent">
-    <v-app-bar-nav-icon icon="mdi-home"></v-app-bar-nav-icon>
-    <v-app-bar-title>排球訓練輔助系統</v-app-bar-title>
+    <v-app-bar-nav-icon icon="mdi-home" to="/index"></v-app-bar-nav-icon>
+    <v-app-bar-title class="title">排球訓練輔助系統</v-app-bar-title>
     <v-btn color="white" variant="text" class="mx-2" rounded="xl" to="/index">首頁</v-btn>
 <v-btn color="white" variant="text" class="mx-2" rounded="xl" to="/concept">觀念</v-btn>
 <v-btn color="white" variant="text" class="mx-2" rounded="xl" to="/skill">技術</v-btn>
@@ -52,3 +52,10 @@ const user = reactive({
 })
 
 </script>
+<style scoped>
+.title{
+  font-size: 26px;
+  font-weight: 600;
+  color: #C5B358;
+}
+</style>
