@@ -4,7 +4,7 @@
       <v-row  class="d-flex flex-row">
         <v-col cols="12" md="6">
             <site />
-            <position />
+            <reserve />
         </v-col>
         <v-col cols="12" md="6">
             <sign />
@@ -17,7 +17,7 @@
 
 <script setup>
 import site from '../components/site.vue';
-import position from '../components/position.vue';
+import reserve from '../components/reserve.vue';
 import sign from '../components/sign.vue';
 import think from '../components/think.vue';
 </script>

@@ -157,16 +157,28 @@ const routes = [
     ],
   },
   {
-    path: "/position",
+    path: "/reserve",
     component: () => import("@/layouts/default.vue"),
     children: [
       {
         path: "",
-        name: "position",
-        component: () => import("@/layouts/concept/position.vue"),
+        name: "reserve",
+        component: () => import("@/layouts/concept/reserve.vue"),
+      },
+    ],
+  },
+  {
+    path: "/sign",
+    component: () => import("@/layouts/default.vue"),
+    children: [
+      {
+        path: "",
+        name: "reserve",
+        component: () => import("@/layouts/concept/sign.vue"),
       },
     ],
   }
+
 ]
 
 const router = createRouter({

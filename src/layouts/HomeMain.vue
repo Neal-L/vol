@@ -90,7 +90,7 @@ const FitnessList = ref( [
     },
     {
         name: "腿",
-        imageUrl: "https://マンガ好き.com/wp-content/uploads/2018/08/2dda75fde4edb951128fc233cdc936dc.jpg",
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUBIMrT6wG8LeRac-V526czKfzqijzTHQzvQ&s",
     }
 ])
 </script>

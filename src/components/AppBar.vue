@@ -3,12 +3,12 @@
     <v-app-bar-nav-icon icon="mdi-home" to="/index"></v-app-bar-nav-icon>
     <v-app-bar-title class="title">排球訓練輔助系統</v-app-bar-title>
     <v-btn color="white" variant="text" class="mx-2" rounded="xl" to="/index">首頁</v-btn>
-<v-btn color="white" variant="text" class="mx-2" rounded="xl" to="/concept">觀念</v-btn>
-<v-btn color="white" variant="text" class="mx-2" rounded="xl" to="/skill">技術</v-btn>
-<v-btn color="white" variant="text" class="mx-2" rounded="xl" to="/fitness">體能</v-btn>
+    <v-btn color="white" variant="text" class="mx-2" rounded="xl" to="/concept">觀念</v-btn>
+    <v-btn color="white" variant="text" class="mx-2" rounded="xl" to="/skill">技術</v-btn>
+    <v-btn color="white" variant="text" class="mx-2" rounded="xl" to="/fitness">體能</v-btn>
 
     <v-spacer></v-spacer>
-
+    {{ time }}
     <v-btn class="mx-3" icon="mdi-cart-outline"></v-btn>
     <v-menu min-width="200px" rounded>
       <template v-slot:activator="{ props }">
@@ -44,11 +44,24 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue'
+import { ref,reactive, onMounted, onUnmounted } from 'vue'
 const user = reactive({
   initials: 'ST',
   fullName: 'Shih Ting',
   email: 'tim85915@gmail.com',
+})
+const time = ref(new Date().toLocaleTimeString())
+const updateTime = () => {
+  time.value = new Date().toLocaleTimeString()
+}
+let intervalId = null
+onMounted(() => {
+  intervalId = setInterval(updateTime, 1000)
+})
+
+// 在组件卸载时清除定时器
+onUnmounted(() => {
+  clearInterval(intervalId)
 })
 
 </script>
