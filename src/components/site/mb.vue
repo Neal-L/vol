@@ -1,6 +1,6 @@
 <template>
   <v-card height="245">
-    <v-img  cover src="/src/images/site/kulo3.jpg"></v-img>
+    <v-img  cover src="/src/images/site/kulo3.jpg" @click="navigateToWsPage"></v-img>
     <v-btn :color="color" variant="text" class=text-1 rounded="xl" to="/mb">{{ text_1 }}</v-btn>
     <!-- <v-card-text class="text-1">{{ text_1 }}</v-card-text> -->
   </v-card>
@@ -11,6 +11,13 @@ import { ref } from 'vue'
 
 const text_1 = ref('攔中手')
 const color = ref('white')
+
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+const navigateToWsPage = () => {
+  router.push('/mb');
+};
 </script>
 
 <style scoped>

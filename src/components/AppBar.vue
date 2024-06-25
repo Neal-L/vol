@@ -9,8 +9,8 @@
 
     <v-spacer></v-spacer>
     {{ time }}
-    <v-btn class="mx-3" icon="mdi-cart-outline"></v-btn>
-    <v-menu min-width="200px" rounded>
+
+    <!-- <v-menu min-width="200px" rounded>
       <template v-slot:activator="{ props }">
         <v-btn icon v-bind="props">
           <v-avatar color="#C5B358" size="large">
@@ -39,7 +39,7 @@
           </div>
         </v-card-text>
       </v-card>
-    </v-menu>
+    </v-menu> -->
   </v-app-bar>
 </template>
 
@@ -70,5 +70,13 @@ onUnmounted(() => {
   font-size: 26px;
   font-weight: 600;
   color: #C5B358;
+}
+.time{
+  font-size: 20px;
+  font-weight: 600;
+}
+.px-1{
+  display: flex;
+  align-items: center;
 }
 </style>

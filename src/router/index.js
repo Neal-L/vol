@@ -173,7 +173,7 @@ const routes = [
     children: [
       {
         path: "",
-        name: "reserve",
+        name: "sign",
         component: () => import("@/layouts/concept/sign.vue"),
       },
     ],
