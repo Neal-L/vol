@@ -1,7 +1,7 @@
 <template>
     <v-card>
     
-        <v-img src="@/images/sign/中間.png"></v-img>
+        <v-img src="@/images/sign/原圖.png"></v-img>
     
         <v-card-title class="card_title"><b>{{ card_title }}</b></v-card-title>
     
@@ -35,6 +35,9 @@ const card_title2 = ref('綠色線的為中間有高度的球種:')
 const card_text4 = ref('分別有離舉球員近身的2號,8號與離舉球員有距離的流2。')
 const card_text5 = ref('2中間有高度的球種則是在舉球員前方的近身球，而8則是在舉球員後方的近身球。')
 const card_text6 = ref('流2中間有高度的球種則是在舉球員前方的離身球。')
+
+
+
 </script>
 <style scoped>
 .card_title {

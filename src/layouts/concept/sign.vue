@@ -12,6 +12,11 @@
           <long /> 
         </v-col>
       </v-row>
+      <v-row>
+        <v-col cols="12" md="6">
+          <action />
+        </v-col>
+      </v-row>
     </v-container>
   </v-main>
   </template>

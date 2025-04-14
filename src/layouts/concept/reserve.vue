@@ -1,46 +1,87 @@
 <template>
-<v-main class="pt-0">
-
-  <v-container>
-    <h1>輪轉概念</h1>
-    <v-row >
-      <v-col cols="12" md="6">
-        <v-img class="first-img" src="@/images/position.png"></v-img>
-
-      </v-col>
-      <v-col cols="12" md="6" >
-        <v-text class="text-1">{{ description }}</v-text>
-      </v-col>
-    </v-row>
-  </v-container>
-  <v-container>
-    <h2>接發球</h2>
-    <v-row>
-      <v-col cols="12" md="6">
-        <reser1 />
-      </v-col>
-      <v-col cols="12" md="6">
-        <reser2 />
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col cols="12" md="6">
-        <reser3 />
-      </v-col>
-      <v-col cols="12" md="6">
-        <reser4 />
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col cols="12" md="6">
-        <reser5 />
-      </v-col>
-      <v-col cols="12" md="6">
-        <reser6 />
-      </v-col>
-    </v-row>
-  </v-container>
-</v-main>
+    <v-main class="pt-0">
+    
+    
+    
+        <v-container>
+    
+            <h1>輪轉概念</h1>
+    
+            <v-row>
+    
+                <v-col cols="12" md="6">
+    
+                    <v-img class="first-img" src="@/images/position.png"></v-img>
+    
+    
+    
+                </v-col>
+    
+                <v-col cols="12" md="6">
+    
+                    <v-text class="text-1">{{ description }}</v-text>
+    
+                </v-col>
+    
+            </v-row>
+    
+        </v-container>
+    
+        <v-container>
+    
+            <h2>接發球</h2>
+    
+            <v-row>
+    
+                <v-col cols="12" md="6">
+    
+                    <reser1 />
+    
+                </v-col>
+    
+                <v-col cols="12" md="6">
+    
+                    <reser2 />
+    
+                </v-col>
+    
+            </v-row>
+    
+            <v-row>
+    
+                <v-col cols="12" md="6">
+    
+                    <reser3 />
+    
+                </v-col>
+    
+                <v-col cols="12" md="6">
+    
+                    <reser4 />
+    
+                </v-col>
+    
+            </v-row>
+    
+            <v-row>
+    
+                <v-col cols="12" md="6">
+    
+                    <reser5 />
+    
+                </v-col>
+    
+                <v-col cols="12" md="6">
+    
+                    <reser6 />
+    
+                </v-col>
+    
+            </v-row>
+    
+        </v-container>
+    
+    </v-main>
 </template>
 
 <script setup>
